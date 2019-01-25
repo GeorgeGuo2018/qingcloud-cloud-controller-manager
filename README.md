@@ -1,4 +1,4 @@
-# ## 如何部署 qingcloud 负载均衡器插件
+﻿# ## 如何部署 qingcloud 负载均衡器插件
 
 1. 以 static pod 方式部署 qingcloud 负载均衡器插件
    复制 [kube-cloud-controller-manager.yaml](deploy/kube-cloud-controller-manager.yaml) 到 主节点 /etc/kubernetes/manifests 目录下，根据情况修改 yaml 中的日志级别 ${KUBE_LOG_LEVEL}
@@ -13,3 +13,6 @@
 请参考[青云官方用户手册](https://docs.qingcloud.com/product/container/k8s#%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8)，为 service 定义添加合适的 annotation
 
 A kubernetes cloud-controller-manager for the qingcloud
+
+
+# ## todo eip的方式改为ip形式，对接eip池子 
